@@ -11,7 +11,7 @@ class Kdiff < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/rajamohan-rj/kdiff/releases/download/v1.0.2/kdiff_1.0.2_Darwin_x86_64.tar.gz"
-      sha256 "4c8b92ccfe6d1d38bc5a5a75713dad21845ff642e9364c5220af5b2c3ffc0e9f"
+      sha256 "1ef7554eb8a854417c09efdd185543b95d5efeee98c233a778518ac435d9a6a7"
 
       def install
         bin.install "kdiff" => "kdiff"
@@ -19,7 +19,7 @@ class Kdiff < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/rajamohan-rj/kdiff/releases/download/v1.0.2/kdiff_1.0.2_Darwin_arm64.tar.gz"
-      sha256 "de45af4eeeecbe1da139f76ea66644a0e680f04cb57ae6a5d0538aba8ca028a9"
+      sha256 "fc6f536a80fbc6f77e45d2bb2d7f20c548e62b3f046ccda0dbea3958688f2531"
 
       def install
         bin.install "kdiff" => "kdiff"
@@ -30,14 +30,14 @@ class Kdiff < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/rajamohan-rj/kdiff/releases/download/v1.0.2/kdiff_1.0.2_Linux_x86_64.tar.gz"
-      sha256 "9a4b3672065970a648671370b53dc501a97460eff91da0ac35e4e5079ae5a9a0"
+      sha256 "d51c5ea3ba68c83c0b7e8de296b17ae4eff71539382f4500b6a99435493fcfe8"
       def install
         bin.install "kdiff" => "kdiff"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/rajamohan-rj/kdiff/releases/download/v1.0.2/kdiff_1.0.2_Linux_arm64.tar.gz"
-      sha256 "65dc109728d86bc697df31150d16f59bde3c598aef7041d2f8e6bc9df08d3be9"
+      sha256 "0b8faaf0c020028315331741fb432696d869470b110ae31bdece7c89701147b7"
       def install
         bin.install "kdiff" => "kdiff"
       end
