@@ -34,6 +34,24 @@ tfrun --help
 
 **Repository:** [rajamohan-rj/tfrun](https://github.com/rajamohan-rj/tfrun)
 
+### kdiff
+
+A Kubernetes resource differ that compares resources between different namespaces.
+
+**Install:**
+
+```bash
+brew install kdiff
+```
+
+**Usage:**
+
+```bash
+kdiff --help
+```
+
+**Repository:** [rajamohan-rj/kdiff](https://github.com/rajamohan-rj/kdiff)
+
 ## Usage Examples
 
 ```bash
@@ -42,6 +60,7 @@ brew tap rajamohan-rj/tap
 
 # Install any package from this tap
 brew install tfrun
+brew install kdiff
 
 # Update packages from this tap
 brew update && brew upgrade
@@ -62,6 +81,7 @@ This tap uses automated formula generation through [GoReleaser](https://goreleas
 All formulae are stored in the `Formula/` directory and follow the standard Homebrew naming convention:
 
 - `Formula/tfrun.rb` - Terraform runner tool
+- `Formula/kdiff.rb` - Kubernetes resource differ
 - More packages will be added here as they are developed
 
 ### Supported Platforms
