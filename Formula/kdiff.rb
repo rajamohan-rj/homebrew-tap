@@ -5,21 +5,21 @@
 class Kdiff < Formula
   desc "Kubernetes resource differ"
   homepage "https://github.com/rajamohan-rj/kdiff"
-  version "1.0.1"
+  version "1.0.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/rajamohan-rj/kdiff/releases/download/v1.0.1/kdiff_1.0.1_Darwin_x86_64.tar.gz"
-      sha256 "0ee67603cd6ba5e78ecdcccf385f04d65bfe98cf6ef73d3da69fbfd09a28e93d"
+      url "https://github.com/rajamohan-rj/kdiff/releases/download/v1.0.0/kdiff_1.0.0_Darwin_x86_64.tar.gz"
+      sha256 "3cc391337775523ed4c824f629fb3659a5b3c900481b0c582d303c69729b5083"
 
       def install
         bin.install "kdiff" => "kdiff"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/rajamohan-rj/kdiff/releases/download/v1.0.1/kdiff_1.0.1_Darwin_arm64.tar.gz"
-      sha256 "7659199bceccdab5d703ca7cbdcb7ca63fe15ccdeb50e47acc610b1b809ad2c5"
+      url "https://github.com/rajamohan-rj/kdiff/releases/download/v1.0.0/kdiff_1.0.0_Darwin_arm64.tar.gz"
+      sha256 "c1d368b89957096417f7ecf177e48b6f60dd1766b802a2ef79b146c21e475a17"
 
       def install
         bin.install "kdiff" => "kdiff"
@@ -29,15 +29,15 @@ class Kdiff < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/rajamohan-rj/kdiff/releases/download/v1.0.1/kdiff_1.0.1_Linux_x86_64.tar.gz"
-      sha256 "b6a18379c25bb8ace78998abd247fe1c7bd2cbd6319b31832179e813d1669016"
+      url "https://github.com/rajamohan-rj/kdiff/releases/download/v1.0.0/kdiff_1.0.0_Linux_x86_64.tar.gz"
+      sha256 "20d2be8ff54e10367f5ee779836587ab0504adf235bbb7a7f85e29f63c361651"
       def install
         bin.install "kdiff" => "kdiff"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/rajamohan-rj/kdiff/releases/download/v1.0.1/kdiff_1.0.1_Linux_arm64.tar.gz"
-      sha256 "a49812a8c8221881cf5e883399a7faee702a9ff2cf36c087ab04b61f591209ad"
+      url "https://github.com/rajamohan-rj/kdiff/releases/download/v1.0.0/kdiff_1.0.0_Linux_arm64.tar.gz"
+      sha256 "379331326a3523aa4ab6e730da695f8b15a6caafa82fcacc1fc7befb5e6775b0"
       def install
         bin.install "kdiff" => "kdiff"
       end
